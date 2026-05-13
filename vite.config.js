@@ -5,6 +5,6 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/Landing-Page/',            // <- necesario para Pages
+  base: '/', // Cambiado de '/Landing-Page/' para despliegue en Firebase (raíz)
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
 })
